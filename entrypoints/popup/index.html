@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL Screenshot</title>
+    <meta name="manifest.type" content="browser_action" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" id="url" placeholder="Enter URL" />
+      <br/>
+      <br/>
+      <label for="withScroll">With Scroll</label>
+      <input type="checkbox" id="withScroll" />
+      <br/>
+      <br/>
+      <label for="scrollFactor">Scroll Factor</label>
+      <input type="number" id="scrollFactor" step="0.1" min="0" max="1" value="1" />
+      <br/>
+      <br/>
+      <label for="scrollTimeout">Scroll Timeout</label>
+      <input type="number" id="scrollTimeout" step="100" min="0" value="500" />
+      <br/>
+      <br/>
+      <label for="removeFixedElements">Remove Fixed Elements</label>
+      <input type="checkbox" id="removeFixedElements" />
+      <br/>
+      <br/>
+      <button id="submit">Submit</button>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
